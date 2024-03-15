@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-profile.component.scss']
 })
 export class UserProfileComponent {
+  navigateToEditProfile() {
+    
+  }
 
 }

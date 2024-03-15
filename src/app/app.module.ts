@@ -12,9 +12,10 @@ import { DetailProgramComponent } from './dashboard/detail-program/detail-progra
 import { EditUserComponent } from './dashboard/edit-user/edit-user.component';
 import { RequestedProfileComponent } from './dashboard/requested-profile/requested-profile.component';
 import { UserProfileComponent } from './dashboard/user-profile/user-profile.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, DetailProgramComponent, EditUserComponent, RequestedProfileComponent, UserProfileComponent],
+  declarations: [AppComponent, HomeComponent, DetailProgramComponent, EditUserComponent, RequestedProfileComponent, UserProfileComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
