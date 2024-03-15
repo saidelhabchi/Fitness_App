@@ -3,6 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from 'src/auth/auth.guard';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './dashboard/home/home.component';
+import { EditUserComponent } from './dashboard/edit-user/edit-user.component';
+import { UserProfileComponent } from './dashboard/user-profile/user-profile.component';
+import { RequestedProfileComponent } from './dashboard/requested-profile/requested-profile.component';
+import { DetailProgramComponent } from './dashboard/detail-program/detail-program.component';
 
 const routes: Routes = [
   {
@@ -19,7 +23,26 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: HomeComponent
+  },
+  {
+     path: 'edit', 
+    component: EditUserComponent 
+
+  },
+  {
+    path:'userProfile',
+    component: UserProfileComponent
+  },
+  {
+    path:'requiredProfile',
+    component:RequestedProfileComponent
+  },
+  {
+    path:'moreProgram',
+    component:DetailProgramComponent
+
   }
+ 
 ];
 
 @NgModule({
