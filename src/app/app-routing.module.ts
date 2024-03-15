@@ -7,6 +7,7 @@ import { EditUserComponent } from './dashboard/edit-user/edit-user.component';
 import { UserProfileComponent } from './dashboard/user-profile/user-profile.component';
 import { RequestedProfileComponent } from './dashboard/requested-profile/requested-profile.component';
 import { DetailProgramComponent } from './dashboard/detail-program/detail-program.component';
+import { ProgDetailComponent } from './dashboard/prog-detail/prog-detail.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
     path:'moreProgram',
     component:DetailProgramComponent
 
+  },
+  {
+    path:'ProgDetail',
+    component:ProgDetailComponent
   }
  
 ];
