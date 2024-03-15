@@ -8,6 +8,9 @@ export class AuthService {
   private readonly afAuth = inject(AngularFireAuth);
 
   login(email: string, password: string) {
+    if(email === null || password === null){
+      return null
+    }
     return this.afAuth.signInWithEmailAndPassword(email, password);
   }
 

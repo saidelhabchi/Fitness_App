@@ -1,0 +1,15 @@
+<div class="flex justify-center items-center h-screen">
+    <form class="w-full max-w-xs bg-gray-800 p-10  rounded-lg" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="text-white text-center text-base mb-5 font-serif">Login to Get Mgaddar</div>
+        <mat-form-field class="w-full">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email"/>
+        </mat-form-field>
+        <mat-form-field class="w-full">
+        <mat-label>Password</mat-label>
+        <input matInput  type="password" formControlName="password"/>
+        </mat-form-field>
+        <button class="w-full" mat-raised-button color="primary">Login</button>
+        <div class="mt-10 text-gray-300"><a routerLink="/auth/signup">sign up for free</a></div>
+    </form>
+</div>

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from 'src/auth/auth.guard';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './dashboard/home/home.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
 
     loadChildren: () => import('../auth/auth.module').then((m) => m.AuthModule),
   },
+  {
+    path: 'dashboard',
+    component: HomeComponent
+  }
 ];
 
 @NgModule({
