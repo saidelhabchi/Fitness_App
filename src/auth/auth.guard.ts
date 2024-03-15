@@ -22,7 +22,7 @@ export class AuthGuard {
     return this.authService.getAuthState().pipe(
       map((state) => {
         if (!state) {
-         this.router.navigate(['/auth/login']);
+       //  this.router.navigate(['/auth/login']);
           return false;
         }
         return true;
